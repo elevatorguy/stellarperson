@@ -41,6 +41,7 @@ class Framebuffer {
                mode_info->PixelFormat ==
                PixelBlueGreenRedReserved8BitPerColor) {
                  gop->SetMode(gop, i);
+		 succeeded = true;
                  break;
             }
 		}
