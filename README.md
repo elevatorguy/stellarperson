@@ -9,8 +9,7 @@ Running it
 ----------
 
 If you want to run it on real hardware, download the .efi and start it with the UEFI shell or a bootloader of your choice. It is possible that your UEFI does not support the requested video mode, in which case you have to build it by yourself. This is required because the raytracer does not use dynamic memory allocation.
-
-Your best chances are by running it in qemu with the OVMF Firmware (Take a look at [this tutorial](https://github.com/tianocore/tianocore.github.io/wiki/How-to-run-OVMF) for details): 
+See [Issue(s)](https://github.com/mmha/efiraytracer/issues) for known Issues and feel free to contribute. Your best chances are by running it in qemu with the OVMF Firmware (Take a look at [this tutorial](https://github.com/tianocore/tianocore.github.io/wiki/How-to-run-OVMF) for details): 
 ```
 qemu-system-x86_64 -bios ovmf_x64.bin -hda raytracer.img
 ```
